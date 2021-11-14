@@ -1,0 +1,42 @@
+// font-family: 'DMSans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Rubik', sans-serif;
+
+// screen size
+
+$xsm: 380px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// colors
+
+$color-dark: #0d0b0c;
+
+
+.test {
+    color: linear-gradient(90deg, #ff1bad 0%, #da43b3 16.15%, #9877bc 30.21%, #2ca5c4 42.19%, #00cdca 54.69%, #00e6c2 64.58%, #00ebaa 77.08%, #0aef98 86.98%, #84f183 100%);
+
+    border: 2, 88px solid;
+
+    border-image-source: linear-gradient(90deg, #fa20ad 0%, #e635b1 9.9%, #cf4cb4 19.79%, #aa68b9 30.21%, #668cbf 41.67%, #4998c1 53.65%, #28a8c4 66.15%, #0cc1c8 77.08%, #00e6c0 86.98%, #4ff08c 100%);
+
+
+}
+
+
+// container size
+
+$container: 600;
+$max-container: 1920;
+
+// fansybox error
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
