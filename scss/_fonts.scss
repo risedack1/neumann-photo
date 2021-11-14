@@ -1,0 +1,22 @@
+/* stylelint-disable */
+@font-face {
+    font-family: "Arkhip";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        url("../fonts/Arkhip.woff2") format("woff2"),
+        url("../fonts/Arkhip.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        url("../fonts/Ubuntu-Regular.woff2") format("woff2"),
+        url("../fonts/Ubuntu-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+/* stylelint-enable */
