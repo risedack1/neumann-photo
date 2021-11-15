@@ -22,35 +22,55 @@
     }
 
     &__photo-box {
-        height: 66vh;
+        // height: 66vh;
         height: auto;
-        // max-width: 100%;
-        @include adaptiv-value("max-width", 580, 300, 1);
+        // max-width: 580px;
+        @include adaptiv-value("max-width", 580, 400, 1);
         width: 90%;
         margin-top: auto;
         margin-bottom: 20px;
         overflow: hidden;
-        border: 3px solid transparent;
+        border: 3px solid;
         border-image-slice: 1;
         border-image-source: linear-gradient(90deg, #fa20ad 0%, #e635b1 9.9%, #cf4cb4 19.79%, #aa68b9 30.21%, #668cbf 41.67%, #4998c1 53.65%, #28a8c4 66.15%, #0cc1c8 77.08%, #00e6c0 86.98%, #4ff08c 100%);
         cursor: pointer;
 
-        @include w($lg) {
-            @include adaptiv-value("max-width", 500, 130, 1);
+        @include w($xl) {
+            max-width: 350px;
         }
 
-        @include w($md) {
-            @include adaptiv-value("max-width", 500, 200, 1);
+        @media screen and (min-height: 1000px) {
+            @include adaptiv-value("max-width", 680, 400, 1);
         }
 
-        @include w($sm) {
-            @include adaptiv-value("max-width", 500, 280, 1);
-        }
-
-        @include w($sm) {
+        @media screen and (orientation: portrait) {
             max-width: 98%;
-
         }
+
+        @include h(420px) {
+            max-width: 30%;
+        }
+
+        // @include h(1030px) and w(1366px) {
+        //     max-width: 600px;
+        // }
+
+        // @include w($lg) {
+        //     @include adaptiv-value("max-width", 500, 130, 1);
+        // }
+
+        // @include w($md) {
+        //     @include adaptiv-value("max-width", 500, 200, 1);
+        // }
+
+        // @include w($sm) {
+        //     @include adaptiv-value("max-width", 500, 280, 1);
+        // }
+
+        // @include w($sm) {
+        //     max-width: 98%;
+
+        // }
     }
 
     &__photo {
@@ -107,6 +127,11 @@
         width: 65px;
         height: 65px;
         display: none;
+    }
+
+    @media screen and (orientation: portrait) {
+        top: auto;
+        bottom: 2%;
     }
 }
 
