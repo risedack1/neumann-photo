@@ -1,7 +1,13 @@
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 1,
     centeredSlides: "true",
+    spaceBetween: 20,
     speed: 800,
 
     mousewheel: {

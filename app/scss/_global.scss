@@ -11,6 +11,14 @@ body {
     font-size: 36px;
     line-height: 1.1;
     background-color: $color-dark;
+
+    @include w($xl) {
+        font-size: 28px;
+    }
+
+    @include w($xl) {
+        font-size: 22px;
+    }
 }
 
 .main {
@@ -47,7 +55,13 @@ body {
     text-align: center;
     @extend %gradient;
 
-    @include w($sm) {}
+    @include w($xl) {
+        font-size: 28px;
+    }
+
+    @include w($sm) {
+        font-size: 22px;
+    }
 }
 
 ol.counter {
