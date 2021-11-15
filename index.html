@@ -6,18 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neumann Photography</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
     <main class="main">
-        <div class="container container--lg">
+        <h1 class="sr-only">Neumann Photography</h1>
+        <div class="container">
             <div class="swiper slider">
                 <ul class="swiper-wrapper slider__inner">
                     <li class="swiper-slide slide-container">
                         <div class="slide-container__photo-box">
-                            <img class="slide-container__photo" src="images/photo-slide-1.jpg" alt="slide number one">
+                            <img class="slide-container__photo" src="images/photo-slide-1.jpg" alt="slide number one"
+                                data-fancybox>
                         </div>
                         <h2 class="title slide-container__title">
                             Neumann Photography
@@ -31,7 +34,8 @@
                     </li>
                     <li class="swiper-slide slide-container">
                         <div class="slide-container__photo-box">
-                            <img class="slide-container__photo" src="images/photo-slide-2.jpg" alt="slide number one">
+                            <img class="slide-container__photo" src="images/photo-slide-2.jpg" alt="slide number two"
+                                data-fancybox>
                         </div>
                         <h2 class="title slide-container__title">
                             Neumann Photography
@@ -70,6 +74,7 @@
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
