@@ -5,12 +5,13 @@
     background-size: 10%, 3%, 15%;
 
     @include w($sm) {
-        background-position: 90% 90%, 15% 100%, 10% 0%;
+        background-position: 90% 90%, 15% 97%, 10% 0%;
         background-size: 20%, 10%, 27%;
     }
 }
 
 .slide-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,9 +24,13 @@
 
     &__photo-box {
         // height: 66vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         height: auto;
         // max-width: 580px;
-        @include adaptiv-value("max-width", 580, 400, 1);
+        @include adaptiv-value("max-width", 500, 400, 1);
         width: 90%;
         margin-top: auto;
         margin-bottom: 20px;
@@ -81,6 +86,10 @@
         object-position: top;
     }
 
+    &__title {
+        margin-top: auto;
+    }
+
     &__work {
         @extend %gradient;
     }
@@ -88,6 +97,10 @@
     &__model {
         @extend %gradient;
         margin-bottom: 20px;
+
+        @include w($xl) {
+            margin-bottom: 10px;
+        }
 
         @include w($sm) {
             margin-bottom: auto;
