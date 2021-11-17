@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.1;
     background-color: $color-dark;
 
@@ -54,22 +54,10 @@ body {
     font-family: "Arkhip", sans-serif;
     display: inline-block;
     font-weight: 400;
-    font-size: 36px;
+    font-size: inherit;
     line-height: 1.2;
     text-align: center;
     @extend %gradient;
-
-    @include w($xl) {
-        font-size: 23px;
-    }
-
-    @include w($sm) {
-        font-size: 22px;
-    }
-
-    @include h(420px) {
-        font-size: 18px;
-    }
 }
 
 ol.counter {
