@@ -13,7 +13,7 @@ body {
     background-color: $color-dark;
 
     @include w($xl) {
-        font-size: 28px;
+        font-size: 23px;
     }
 
     @include w($xl) {
@@ -60,7 +60,7 @@ body {
     @extend %gradient;
 
     @include w($xl) {
-        font-size: 28px;
+        font-size: 23px;
     }
 
     @include w($sm) {
