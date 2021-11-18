@@ -5,8 +5,15 @@
     background-size: 10%, 3%, 15%;
 
     @include w($sm) {
-        background-position: 99% 90%, 8% 97%, 10% 0%;
+        background-position: 99% 95%, 3% 97%, 10% -3%;
         background-size: 20%, 10%, 24%;
+    }
+
+    @include h(420px) {
+        background-image: url('../images/icons/bg-1.svg'), url('../images/icons/bg-3.svg');
+
+        background-position: 78% 86%, 21% 15%;
+        background-size: 10%, 14%;
     }
 }
 
@@ -66,7 +73,7 @@
         }
 
         @include h(420px) {
-            max-width: 30%;
+            max-width: 26%;
             margin-bottom: 10px;
         }
     }
@@ -114,7 +121,7 @@
         width: 85px;
         height: 85px;
         right: auto;
-        left: 7%;
+        left: 26%;
     }
 
     @include w($xsm) {
@@ -146,7 +153,11 @@
 
     @include w($md) {
         left: auto;
-        right: 7%;
+        right: 26%;
+    }
+
+    @include h(420px) {
+        right: 12%;
     }
 }
 
