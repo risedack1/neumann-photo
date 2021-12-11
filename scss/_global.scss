@@ -54,10 +54,14 @@ body {
     font-family: "Arkhip", sans-serif;
     display: inline-block;
     font-weight: 400;
-    font-size: inherit;
+    font-size: 30px;
     line-height: 1.2;
     text-align: center;
     @extend %gradient;
+
+    @include w($xl) {
+        font-size: 22px;
+    }
 }
 
 ol.counter {
